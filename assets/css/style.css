@@ -1,11 +1,24 @@
+body {
+    font-family: 'Gaegu', cursive;
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 h1 {
     color: white;
     margin: 0;
     padding: 10px 20px;
     text-transform: uppercase;
     font-weight: 400;
+    font-size: 24px;
 }
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
+    font-size: 20px;
+}
 div {
     width: 30%;
     margin: 15% auto;
@@ -13,9 +26,40 @@ div {
     background: #f7f7f7;
 }
 
+li{
+    background: rgb(61, 69, 184);
+    height: 40px;
+    line-height: 40px;
+    color: rgb(208, 196, 196);
+}
+li:nth-child(2n){
+    background: rgb(23, 36, 107);
+}
+
 
 .line-through {
     color: grey;
     text-decoration: line-through;
 
+}
+
+span {
+    background: rgba(255, 0, 0, 0.844);
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+	width: 0px;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1.0;
+}
+
+#rright {
+    float: right;
 }

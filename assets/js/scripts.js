@@ -20,7 +20,7 @@ $("input[type = 'text']").on("keypress", function(e){
     //   clear input
       $(this).val("");
     //   pushing to new LI TO DO
-    $("ul").append("<li> <span> X </span>"+ todoText + "</li>");
+    $("ul").append("<li> <span><i class='fas fa-bug'></i></span>"+ todoText + "</li>");
         
     }
 });
